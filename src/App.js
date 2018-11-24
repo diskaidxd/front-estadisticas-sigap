@@ -14,7 +14,7 @@ import SelectMonth from "./componentes/selectMonth";
 class App extends Component {
 
     constructor(){//constructor inicial
-        super();
+        super(); //adfadsfas
         this.state = {
             isUsed:false, //usado para saber si las aplicacion es usada
             showPopover: false, //usado para mostrar o no el popup
