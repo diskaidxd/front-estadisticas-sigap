@@ -4,14 +4,32 @@ import './App.css';
 import Chart from './componentes/chart.js'
 import Fecha from './componentes/fecha.js'
 import BtnExport from './componentes/btn-export';
+import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import Tabla from './componentes/tabla';
 import {Tabs, Tab} from 'react-bootstrap-tabs';
 import ToolTipPosition from "./componentes/ToolTipPositions";
 import SelectGrafica from "./componentes/selectForGrafica";
 import SelectYear from "./componentes/selectYear";
+
 import SelectMonth from "./componentes/selectMonth";
 
+const dataTable = {
+    headerRow: [ 'Concepto', 'Importe', 'Codigo-Alumno', 'Alumno', 'Fecha'],
+   
+    dataRows: [
+        ['210011' , '750.00' , '0' , 'LOURDES NADESHA SALDARRIAGA LO', '03-01-2015'],
+        ['210154' , '15.00' , '0' , 'FRANCIA ROCHA CAROL NADIR', '05-01-2015'],
+        ['210011' , '750.00' , '0' , 'LEYVA RODRIGUEZ LIZET', '06-01-2015'],
+        ['210011' , '750.00' , '0' , 'RIOS CAHUAS SONY STEW', '03-01-2015'],
+        ['210154' , '15.00' , '0' , 'WALBERTO VILCHEZ RODRIGUEZ', '05-01-2015'],
+        ['210011' , '750.00' , '0' , 'LEYVA RODRIGUEZ LIZET', '06-01-2015']
+      
+        
+    ]
+};
+
 class App extends Component {
+    
 
     constructor(){//constructor inicial
         super(); //adfadsfas
@@ -715,6 +733,50 @@ class App extends Component {
                                             }
                                         </Tab>
                                     <Tab label="Reporte">
+                                    { 
+                                        
+                                     <div>
+                                           <br></br>
+                                        
+                                        
+                                        <h2>Universidad Nacional Mayor de San Marcos</h2>
+                                        <h4>Facultad de Ingenieria de Sistemas e Informatica</h4>
+                                    
+                                        <h4>Unidad de Postgrado</h4>
+                                        <br></br>
+                                        <br></br>
+                                        
+                                        
+                                        <h5>REPORTE ESTADISTICO POR NUMERO DE IMPORTES</h5>
+                                        <br></br>
+                                        <img src="san.jpg" style={{width: 100, height: 100, position: 'absolute', top: 70, left:150}}/>
+
+                                        <div className="container-fluid">
+                                    <table id="datatables" ref="main" className="table table-striped table-no-bordered table-hover" cellSpacing="0" width="100%" style={{width:"100%"}}>
+                                        <thead>
+                                        <tr>
+                                       
+                                         
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <BootstrapTable data={this.state.tableData} pagination options={{ noDataText: 'No hay informacion para mostar' }}>
+                <TableHeaderColumn width="150" dataField='concepto' isKey>Concepto</TableHeaderColumn>
+                <TableHeaderColumn width="150" dataField='importe'>Importe</TableHeaderColumn>
+                <TableHeaderColumn width="150" dataField='codigoalumno'>Codigo</TableHeaderColumn>
+                <TableHeaderColumn width="300" dataField='nombrealumno'>Alumno</TableHeaderColumn>
+                <TableHeaderColumn width="150" dataField='fecha'>Fecha</TableHeaderColumn>
+            </BootstrapTable>
+
+                                                
+                                            </tbody>
+                                        
+                                    </table>
+                                </div>
+                                        </div>
+                                        
+                                    
+                                            }
                                     </Tab>    
                                     </Tabs>
                                 </div>

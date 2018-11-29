@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Luis Alexis Sanches Ramirez",
+      "id": 1,
+      "img": "",
+      "icon": "pe-7s-users",
+      "datos": {
+        "razonSocial": "Servicios Entel Peru SAC",
+        "nombreComercial": "Entel",
+        "tipoDocumento": "RUC",
+        "numeroDocumento": 20600595505,
+        "sector": "Telecomunicaciones, Consumo Masivo",
+        "urls": "www.entel.pe, www.entelperu.com",
+        "tags": "entel, entel peru, telefonica, telecomunicaciones, red dorsal, banda ancha"
+      },
+      "descripcion": "Entel es una empresa sñaldkfjasñlkdhfoidfñlskdfñlasijdfoñiasdñlkmcvñlijasdfljk",
+      "direcciones":[{
+          "name": "Sede Principal",
+          "direccion":"Av. Pseo de la republica 2588 Of. 1601, Urb., Asociacion de los Pinares Etapa II",
+          "ubicacion":"San isidro/Lima/Perú",
+          "telefono": "51.1.720 0965 Axo 2455 | 51.1.977 802 406"
+        
+        },{
+          "name": "Oficina de atencion al cliente - San Luis ",
+          "direccion": "Av. Pseo de la republica 2588 Of. 1601, Urb., Asociacion de los Pinares Etapa II",
+          "ubicacion": "San isidro/Lima/Perú",
+          "telefono": "51.1.720 0965 Axo 2455 | 51.1.977 802 406",
+          "img": "Sarek.jpg"
+        }
+      ]
+    },
+    {
+       "name": "ENTEL CHILE",
+       "id": 2,
+       "img": "",
+       "icon": "pe-7s-users"
+    }
+  ]
